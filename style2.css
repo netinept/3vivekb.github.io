@@ -1,0 +1,98 @@
+/* border-width: 10px; */
+
+.everything {
+  width:85%;
+  margin: 0 auto;
+}
+
+.topzone {
+  text-align:center;
+  color:red;
+  font-weight:bold;
+  float: top;
+  background-color: blue;
+  padding-top: 15px;
+      border-bottom: 4px solid green;
+      border-left: 4px solid green;
+      border-right: 4px solid green;
+}
+
+.middle {
+  text-align:middle;
+  color:blue;
+     background-color: yellow;
+  padding: right;
+  /*margin 0 auto;*/
+  border-left: 10px pink;
+  border: double purple;
+  display: inline-block;
+  height:300px;
+  vertical-align: top;
+    /*width:500px;*/
+    /* width: 300px; */
+  /* float: right; */
+}
+
+.sidebar {
+    text-align:left;
+    /* float: left; */
+   background-color: green;
+   /* min-height: 700px; */
+   /* min-width: 25%; */
+    /*line-height:30px;*/
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    border-right: 4px solid green;
+      border-top: 4px solid green;
+      border-bottom:  7px solid green;
+      display: inline-block;
+    /* float:left; */
+    /* padding:5px; */ 
+  
+  
+}
+
+.midfooter {
+    text-align:center;
+    /* float: bottom; */
+      background-color:red;
+    color:white;
+    /* clear:both; */
+    text-align:center;
+    padding:5px; 
+      border: 1px solid green;
+      
+  
+}
+
+.footer {
+    text-align:center;
+    /* float: bottom; */
+      background-color:black;
+    color:white;
+    /* clear:both; */
+    text-align:center;
+    padding:5px; 
+      border: 1px solid green;
+  
+}
+
+.important {
+  color: orange;
+}
+
+selector:pseudo-class
+{
+  
+}
+
+
+a:link{color:green;}
+a:vistied {color:yellow;}
+a:hover {color:brown;}
+a:active {color:yellow}
+/* for buttons!!
+{
+  
+} */

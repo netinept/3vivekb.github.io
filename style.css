@@ -1,0 +1,89 @@
+/*
+
+selector {
+	property: value;
+	property: value;
+	property: value;
+	}
+}
+*/
+
+/*
+id - not on type of element - but an id you give it!!  As long as it is unique!
+You can only have one id on a page!
+
+ID to an element!
+*/
+
+.warning {
+color: red;
+}
+/*(SEMANTIC NAME - describes purpose of the object!!)*/
+/*
+<p class=“warning”>Run away!</p>
+*/
+.caution {
+	color: yellow;
+}
+/*<p class="caution">Be Careful</p>*/
+
+#finalcountdown{
+	color: orange;
+}
+
+
+h2 {
+color: navy;
+}
+p {
+/*color: red;*/
+/*background-color: blue;*/
+font-family: serif;
+font-size: 1.5em;
+}
+p em {
+color: yellow;
+}
+em{
+	color:grey;
+}
+
+li{
+color: green;
+}
+
+img {
+	/*border: 1.7em dash;*/
+	border:0.5em;
+	border-style: solid;
+	border-color: green;
+	color:orange;
+}
+/*property values:*/
+
+/*comma specified values for font values -> give a few fallback fonts!!!*/
+/*Start with ideal font choice, and add a few more choices for font family!!*/
+
+
+/*color - can use css name for red, or hexadecimal - #ff0000*/
+/*most browsers use hexadeicmal - modern browsers can handle rgb values!!*/
+/*p{
+}*/
+
+
+/*
+p{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 10px
+	font-family: sans-serif;
+}
+Order doesn't matter - for some other properties yes - but for font it doesn't really matter!!
+
+	
+p{
+	font: italic bold 10px sans-seriff;
+}
+*/
+
+/*	font-family: "Arial", sans-seriff;
