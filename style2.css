@@ -18,6 +18,8 @@
 }
 
 .middle {
+  /*position: absolute;*/
+  position: relative;
   text-align:middle;
   color:blue;
      background-color: yellow;
@@ -29,13 +31,30 @@
   height:300px;
   vertical-align: top;
   text-align: center;
-    /*width:500px;*/
+    /*width:200px;*/
      /*width: 300px; */
   /* float: right; */
 }
+.overlay{
+  position: absolute;
+  left: 80px;
+  bottom: 5px;
+  z-index: 4;
+  background-color: black;
+}
+.imgcontainer{
+  position: relative;
+  /*position: absolute;*/
+  /*bottom: 15 px;*/
+  top: 10px;
+  left: 0px;
+  z-index: 0;
+  background-color: orange;
+}
+
 .imgclass {
   margin: 0 auto;
-  width: 50%;
+  width: 75%;
   height: auto;
 }
 
@@ -84,6 +103,31 @@
       border: 1px solid green;
   
 }
+
+.float{
+  float: left;
+  width:200px;
+  background: green;
+}
+.clear-left{
+  clear:left;
+  background:blue;
+}
+
+.floatingleft{
+  /*width:60%;*/
+  width:50%;
+  float:left;
+  background: green;
+}
+.floatingright{
+/*width:60%;*/
+width:50%;
+float:right;  
+background:blue;
+}
+
+
 
 .important {
   color: orange;

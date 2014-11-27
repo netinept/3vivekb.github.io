@@ -1,0 +1,20 @@
+.everything {
+  width:85%;
+  margin: 0 auto;
+  position: absolute;
+}
+
+
+.floatingleft{
+  /*width:60%;*/
+  width:50%;
+  float:left;
+  background: green;
+}
+
+.floatingright{
+/*width:60%;*/
+width:50%;
+float:right;  
+background:blue;
+}

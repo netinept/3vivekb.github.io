@@ -1,0 +1,36 @@
+.relative{
+	position: relative;
+	directional properties
+	left: 80px;
+	top: 20px;
+	height: 100px:
+	(80 pixels to the left of its parent container!)
+	(20 pixels from the top of its parent elemement)
+	background-color: yellow;
+}
+
+.top{
+	position: absolute;
+	top: -40px;
+	(use top border as zero point on y axis -> anything above zero point, use minus or regular value!)
+	right: 10px;
+	background-color: yellow
+}
+
+.bottom{
+	position: absolute;
+	bottom: -40px;
+	left:60px
+	background-color: green
+}
+(sends it down!!!  If not in a static box uses html!!)
+
+(position -> must be used with z-index)
+
+.top{
+	position: absolute;
+	bottom: 15 px;
+	left: 60px
+	background-color: green;
+	z-index: 2;
+}
