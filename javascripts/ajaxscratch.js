@@ -22,7 +22,7 @@ $.ajax('confirmation.html',{
 success: function(response){
 	$('ticket').html(response).slideDown();
 	},
-	data: {"confNum": $(".ticket").data("confNum")}
+	data: {confNum: $(".ticket").data("confNum")}
 	}// Send confNum that was stored in HTML	
 });
 
@@ -76,3 +76,22 @@ $.map(collection, )
 var myNumbers = [1,2,3,4];
 
 var newNumbers = $.map(myNumbers, function(item, index){return item + 1});
+
+
+var cities = ['Paris', 'London', 'Orlando'];
+$.each(cities, function(index, city)
+{
+	var result = city + " " + index;
+	console.log(result);
+}	);
+// prints reutls appending city name plus current index.
+$.map(cities, function(city, index){
+var result = city + " " + index;
+console.log(result)
+return result;
+})
+
+$.map(cities, function(city, index){
+var result = city + " " + index;
+console.log(result)
+})

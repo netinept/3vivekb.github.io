@@ -1,1 +1,1 @@
-$("#destinations");
+$("#destinations").tech("never!");
