@@ -15,3 +15,12 @@ jquery(document).ready(function(){
 });
 
 $(document).ready(function(){$("span").text("$100");});
+$("li")
+[<li>​Istanbul​</li>​, <li>​The moon​</li>​, <li>​Your mom​</li>​]
+
+$("li").text("Orlando")
+// modifies it all!
+// #container  -> id = container
+$("#container");
+// .articles ->
+$(".articles")
