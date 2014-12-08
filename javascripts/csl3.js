@@ -28,10 +28,11 @@ while(trainNumber <= 8){
 console.log("Train #" + trainNumber + " is running")
 trainNumber++;
 };
+var gotName = false
 
-// alert("Alter! Jackass near!")
-// var okay=confirm("Are you sure?  Jackasses made this page!")
-// alert(okay)
-var response = prompt("Who let the dogs out?")
-// console.log(response)
-confirm("Are you sure " + response + " let the dogs out?")
+var passengers = ["A", "B", "C"];
+passengers[4] = "D"
+passengers
+passengers.pop();
+// deletes last position of array and returns string as a value.
+console.log(passengers)
