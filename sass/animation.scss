@@ -1,15 +1,12 @@
 /* 
 Because we all need some Sass in our lives. And in our codes.
--------------------------------------------------------------------- 
-This code will subtly generate different colors for your background.
-This code will also do some animations for your header. 
+--------------------------------------------------------------------------------- 
+This code will subtly (or not so subtly) generate different colors for background.
+This code will also do some animations for header. 
 */
 
 
-// Defining a mixin here that creates variables for animation properties. 
-// This mixin will later be called multiple times from wherever for animations. 
-
-@mixin animation($name, $duration, $timing, $direction, $iteration){
+ @mixin animation($name, $duration, $timing, $direction, $iteration){
 	animation-name: $name;
 	animation-duration: $duration;
 	animation-timing-function: $timing;
@@ -26,14 +23,21 @@ This code will also do some animations for your header.
 // Color Variables. Pick your poison! 
 
 $color0: #DFDFDF;
-$colors: #8bc5d1, #b4cd84, #bdb280, #fadc84, #b78ec8, #eeafa0, #d1d18b, #8bd1b9, #8bc5d1, #DFDFDF; //#d1988b
+$colors: #8bc5d1, #b4cd84, #bdb280, #fadc84, #d1988b, #987bb5, #d1d18b, #8bd1b9, #8bc5d1, #DFDFDF; //#d1988b
+
+
+// Creates an animation that changes background color iterating through the colors array above. 
+// Additionally uses Sass's native color function which lightens a color for a pastel look
 
 @include keyframes(changecolours) {
-	0% {background-color:$color0}
+	0% {background-color: lighten($color0,5%)}
 	@for $i from 1 through length($colors){
-		#{$i}0% {background-color:nth($colors, $i)}
-	}	
+		#{$i}0% {background-color: lighten(nth($colors, $i),5%) }
+	}	 
 }
+
+
+// Creates header animation to move element 85px to left
 
 @include keyframes(title) {
 	0% {  left: 0; }
@@ -41,7 +45,7 @@ $colors: #8bc5d1, #b4cd84, #bdb280, #fadc84, #b78ec8, #eeafa0, #d1d18b, #8bd1b9,
 }
 
 h1 {
-	@include animation(title, 2s, ease, alternate, infinite);
+	@include animation(title, 2s, ease, normal, infinite);
 	position: relative;
 }
 
@@ -50,7 +54,7 @@ h2 {
 }
 
 #main_content_wrap{
-	@include animation(changecolours, 80s, ease, normal, infinite)
+	@include animation(changecolours, 100s, ease, alternate, infinite) //normal
 }
 
 
