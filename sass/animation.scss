@@ -45,7 +45,7 @@ $colors: #8bc5d1, #b4cd84, #bdb280, #fadc84, #d1988b, #987bb5, #d1d18b, #8bd1b9,
 }
 
 h1 {
-	@include animation(title, 2s, ease, normal, infinite);
+	@include animation(title, 2s, ease, alternate, infinite);
 	position: relative;
 }
 

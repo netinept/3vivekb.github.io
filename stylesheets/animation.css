@@ -70,8 +70,8 @@ h1 {
   animation-duration: 2s;
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   position: relative; }
