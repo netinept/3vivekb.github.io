@@ -1,76 +1,143 @@
 <!DOCTYPE html>
-<!-- Stolen from http://motherfuckingwebsite.com/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- FOR THE CURIOUS: This site was made by @thebarrytone. Don't tell my mom. -->
-    
-    <title>Vivek Bansal</title>
-<style type="text/css"></style></head>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-    <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KQN7PF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KQN7PF');</script>
+  <title>vivekbansal.com</title>
+  <meta name="description" content="A personal website for Vivek Bansal">
 
-    <header>
-        <h1>This is a motherfucking website about Vivek</h1>
-        <aside>I ain't perfect.</aside>
-    </header>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+</head>
+
+  <body>
+      <div id="particles-js">
+  <div class="header">
+      <h1>
+        <span class="site-title">Vivek Bansal</span>
+        <span class="site-description">Data Engineer</span>
+      </h1>
+      <div class="header-icons">
+        <a aria-label="Send email" href="mailto:3vivekb@gmail.com"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My Twitter" target="_blank" href="https://twitter.com/Vevetron"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+        <a aria-label="My Github" target="_blank" href="https://github.com/3vivekb"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        <!-- <a aria-label="My Google Plus" target="_blank" href="#"><i class="icon fa fa-google-plus" aria-hidden="true"></i></a> -->
+      </div>
+      <div class="header-links">
+        <a class="link" href="#about" data-scroll>About Me</a>
+        <a class="link" href="#projects" data-scroll>Projects</a>
+      </div>
+  </div>
+  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>
+
+      <section id="about">
+        <!-- Modify this site based on your own expertise.  Go to this site for more icons:
+  http://konpa.github.io/devicon/ -->
+<div class="user-details">
+  <h1> My Expertise </h1>
+  <p> Hacking. Mapping. Doing my part. </p>
+</div>
+  <div class="user">
+    <div class="tech">
+      <h2>Data Nerd</h2>
+      <i class="devicon-mysql-plain-wordmark colored"></i>
+      <i class="devicon-python-plain-wordmark"></i>
+      <p> I'm a data nerd! I started out studying insurance mathematics and economics but became enthralled to the dynamic world of big data, statistics, and machine learning. I have solid experience in R, Python/Pandas, GIS, and many flavors of databases. </p>
+    </div>
+    <div class="tech">
+      <h2>Developer</h2>
+      <i class="devicon-ubuntu-plain-wordmark colored"></i>
+      <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+      <p> I enjoy coding and building systems from backend scripting to web development. My design and coding philosophy is to find the simplest solution and be Agile in implementation. </p>
+    </div>
+    <div class="tech">
+      <h2>Doer/Leader</h2>
+      <i class="devicon-github-plain colored"></i>
+      <i class="devicon-slack-plain colored"></i>
+      <p> I'm usually doing too much.  In my spare time I'm Co-Captain of Code for San Jose, a space for the civic tech community to meet and innovate. I'm also passionate about OpenStreetMap. </p>
+    </div>
+</div>
+
+      </section>
+      <section id="projects">
+        <div class="user-details">
+  <h1> Featured Projects </h1>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <a href="https://public.tableau.com/views/stopsandspeedanalyses/Story1?:embed=y&:display_count=yes&publish=yes" target="_blank">
+      <img alt="vta network speed highlighted" src="/assets/img/fast_analysis_tableau_square.png" />
+    </a>
+  </div>
+  <div class="contents">
+    <h3> Fast Analysis Transit data and Visualization </h3>
+    <ul>
+      <li> Python/GIS/SQL</li>
+      <li> Tableau</li>
+      <li> Transit Planning</li>
+    </ul>
+    <p>Took many different sources of data including Swiftly, Ridership, GTFS, and combined into one geojson, then created dashboards to help with stop consolidation and speed analysis.</p>
+    <a class="project-link" target="_blank" href="https://github.com/vta/fastest-bus-analysis-in-the-west">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <a href="https://github.com/vta/Managed-and-Tolled-Lanes-Feed-Specification/blob/master/MTLFS-2018-Poster_final.pdf" target="_blank" >
+      <img alt="mtlfs poster" src="/assets/img/MTLFS-2018-Poster_final.jpg" /> 
+    </a>
+    <!-- <img alt="mountains" src="/assets/img/skate.jpg" /> -->
+    <!-- MTLFS-2018-Poster_final -->
+  </div>
+  <div class="contents-right">
+    <h3> Managed and Tolled Lanes Feed Specification </h3>
+    <ul>
+      <li> Python/Flask/Javascript</li>
+      <li> API design</li>
+      <li> AWS</li>
+    </ul>
+    <p>Our team created one of the first open APIs and data standards for managed lanes. We based the API around the <a target="_blank" href="https://github.com/NABSA/gbfs">GBFS</a>.</p>
+    <a class="project-link" href="https://mtlfs.vta.org" target="_blank">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="completed_sidewalks" src="/assets/img/sidewalks_import.png" />
+  </div>
+  <div class="contents">
+    <h3> OSM Pedestrian Network </h3>
+    <ul>
+      <li> Python/GIS/Docker</li>
+      <li> JOSM/ID Editor</li>
+      <li> Community Organizing</li>
+    </ul>
+    <p>Led a project to import sidewalks and crossings across all of San Jose into Openstreetmap. The goal is to create a pedestrian network to aid those with disabilities and enable advanced pedestrian routing and analysis.</p>
+    <a class="project-link" target="_blank" href="https://wiki.openstreetmap.org/wiki/Santa_Clara_County,_California/San_Jose_Sidewalk_Import">Check it out</a>
+  </div>
+</div>
+
+      </section>
         
-        <h2>I work as a Data Scientist</h2>
-        
-        <ul>
-            <li>I got a M.S. in Statistics from San Jose State University</li>
-            <li>I code in R and Python</li>
-            <li>I know SQL like a Motherfuckin G</li>
-            <li>I probably know more about Machine Learning than you</li>
-            <li>I get Hadoop.  And Cassandra.  And Mongo. and Why</li>
-        </ul>
-        
-        <h3>I like to work with Code for San Jose:</h3>
-        
-        <p>This city's given me a lot.  Why not give back?  Plus I get bored.  and why not do something worthy of my time?  And hey, people who comt to Code for San Jose are pretty awesome too.
-        </p>
-        
-        <h3>I like cartoons.  And Beer.  And Tv.</h3>
-        
-        <p>Got a problem with that?  I thought not. </p>
-        
+      <footer class="footer">
+    <p>&copy; Vivek Bansal</p>
+    <p>Framework Built with Jekyll and <span class="love">❤</span> by <a href="https://github.com/nrandecker">Nathan Randecker</a></p>
+</footer>
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="/assets/js/sweet-scroll.min.js"></script>
+<script src="/assets/js/main.js"></script>
+<!-- Google Analytics -->
 
- <!--        <blockquote cite="./Website_files/good-design">"Good design is as little design as possible."<br>
-            - some German motherfucker
-        </blockquote>
-  -->   
-    <hr>
-    
-    <h2>Epilogue</h2>
-
-
-    <p>And then he lived happily ever after.  Or did he? </p>
-    <!-- <p>From the philosophies expressed (poorly) above, <a href="http://vivekbansal.com/story.html">txti</a> was created. You should try it today to make your own motherfucking websites.</p> -->
-    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-114661150-1', 'auto');
+ga('send', 'pageview');
+</script>
 
 
 
-<!-- End Google Tag Manager -->
-
-    <!-- yes, I know...wanna fight about it? -->
-    <!-- // <script async="" src="./Website_files/analytics.js"></script><script> -->
-      <!-- (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ -->
-      <!-- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), -->
-      <!-- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) -->
-      <!-- })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); -->
-    
-      <!-- ga('create', 'UA-45956659-1', 'motherfuckingwebsite.com'); -->
-      <!-- ga('send', 'pageview'); -->
-    <!-- </script> -->
-    
-
-</body></html>
+  </body>
